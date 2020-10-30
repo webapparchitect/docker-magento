@@ -1,6 +1,6 @@
 <h1 align="center">markshust/docker-magento - Extension (To Add B2B and Localized Dev Setup)</h1>
 
-<div align="center">
+<div>
   <p>Srinivas's Changes</p>
   <ol>
     <li>Added Composer Install in the Setup Script (bin/setup)</li>
