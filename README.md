@@ -1,5 +1,17 @@
-<h1 align="center">markshust/docker-magento</h1>
+<h1 align="center">markshust/docker-magento - Extension (To Add B2B and Localized Dev Setup)</h1>
 
+<div align="center">
+  <p>Srinivas's Changes</p>
+  <ol>
+    <li>Added Composer Install in the Setup Script (bin/setup)</li>
+    <li>Added steps to disable MFA for local deployment (bin/setup)</li>
+    <li>Updated the db.env file to capture the Admin user and password settings (env/db.env)</li>
+    <li>Updated setup to read db.env variables for admin setup (bin/setup) </li>
+    <li>Added B2B setup script bin/b2bsetup - to be executed after the magento installation is completed</li>
+  </ol>
+</div>
+
+<h2>Instructions from Mark's Repo</h2>
 <div align="center">
   <p>Mark Shust's Docker Configuration for Magento</p>
   <img src="https://img.shields.io/badge/magento-2.X-brightgreen.svg?logo=magento&longCache=true&style=flat-square" alt="Supported Magento Versions" />

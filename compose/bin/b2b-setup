@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Srinivas Update : Loading b2b extension ..."
+bin/composer require magento/extension-b2b
+
+echo "B2B : Running upgrade ..."
+bin/clinotty bin/magento setup:upgrade
+
+echo "B2B : Compiling Dependency Injection ..."
+bin/clinotty bin/magento setup:di:compile
+
+echo "B2B : Deploying Static content ..."
+bin/clinotty bin/magento setup:static-content:deploy -f
+
+echo "B2B : Clearing the cache to apply updates..."
+bin/clinotty bin/magento cache:flush
+
+
